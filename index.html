@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>빛 서클 - 데프</title>
+<meta name="description" content="svvr" />
+<meta name="keywords" content="svvr" />
+
+<!-- #css --><link rel='stylesheet' id='reset-css'  href='./style.css?ver=1.3.39' type='text/css' media='all' />
+<!-- #js -->  <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#keyword").keyup(function() {
+        var k = $(this).val();
+        $("#mhw-table > ul > li").hide();
+        var temp = $("#mhw-table > ul > li > p:nth-child(1n+1):contains('" + k + "')");
+
+        $(temp).parent().show();
+    })
+})
+</script>
+<script>
+  $( document ).ready( function() {
+    var jbOffset = $( '#input-form' ).offset();
+    $( window ).scroll( function() {
+      if ( $( document ).scrollTop() > jbOffset.top ) {
+        $( '#input-form' ).addClass( 'fixed' );
+      }
+      else {
+        $( '#input-form' ).removeClass( 'fixed' );
+      }
+    });
+  } );
+</script>
+</head>
+
+<body>
+<div id="global_container" class="global_container">
+<!-- #main_container --><div class="body_container" id="container">
+<div id="input-form">
+  <input type="text" id="keyword" placeholder="몬스터 이름...">
+</div>
+  <div class="table_inner">
+    <div class="table_wrap" id="mhw-table">
+      <ul>
+
+        <li><p><small>맹우룡</small></p><p>버프바로</p>
+          <span><img src="./images/mhwi-banbaro_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="dragon">용</span>★★★<br/>
+            <span class="fire">불</span>★★<br/>
+            <span class="thunder">뇌</span>★
+          </span>
+        </li>
+
+        <li><p><small>동어룡</small></p><p>브란토도스</p>
+          <span><img src="./images/mhwi-beotodus_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="fire">불</span>★★★<br/>
+            <span class="thunder">뇌</span>★★<br/>
+            <span class="water">수</span>★
+          </span>
+        </li>
+
+        <li><p><small>신룡</small></p><p>나르가쿠르가</p>
+          <span><img src="./images/mhwi-nargacuga_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="thunder">뇌</span>★★★<br/>
+            <span class="fire">불</span>★★<br/>
+            <span class="ice">빙</span>★<br/>
+            <span class="dragon">용</span>★
+          </span>
+        </li>
+
+        <li><p><small>빙룡</small></p><p>이베르카나</p>
+          <span><img src="./images/mhwi-velkhana_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="fire">불</span>★★★<br/>
+            <span class="thunder">뇌</span>★★<br/>
+            <span class="dragon">용</span>★★<br/>
+            <span class="water">수</span>★
+          </span>
+        </li>
+
+        <li><p><small>공룡</small></p><p>티가렉스</p>
+          <span><img src="./images/mhwi-tigrex_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="thunder">뇌</span>★★★<br/>
+            <span class="dragon">용</span>★★<br/>
+            <span class="water">수</span>★<br/>
+            <span class="ice">빙</span>★
+          </span>
+        </li>
+
+        <li><p><small>얼려찌르는</small></p><p>레이기에나</p>
+          <span><img src="./images/mhwi-shrieking_legiana_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="fire">불</span>★★★<br/>
+            <span class="thunder">뇌</span>★★<br/>
+            <span class="water">수</span>★<br/>
+            <span class="dragon">용</span>★
+          </span>
+        </li>
+
+        <li><p><small>빙아룡</small></p><p>벨리오로스</p>
+          <span><img src="./images/mhwi-barioth_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="fire">불</span>★★★<br/>
+            <span class="thunder">뇌</span>★★<br/>
+            <span class="dragon">용</span>★
+          </span>
+        </li>
+
+        <li><p><small>참룡</small></p><p>디노발드</p>
+          <span><img src="./images/mhwi-glavenus_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="water">수</span>★★★<br/>
+            <span class="ice">빙</span>★★<br/>
+            <span class="dragon">용</span>★★<br/>
+            <span class="thunder">뇌</span>★
+          </span>
+        </li>
+
+        <li><p><small>쇄룡</small></p><p>브라키디오스</p>
+          <span><img src="./images/mhwi-brachydios_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="water">빙</span>★★★<br/>
+            <span class="ice">수</span>★★<br/>
+            <span class="ice">뇌</span>★<br/>
+            <span class="thunder">용</span>★
+          </span>
+        </li>
+
+        <li><p><small>뇌악룡</small></p><p>안쟈나프 아종</p>
+          <span><img src="./images/mhwi-fulgur_anjanath_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="ice">빙</span>★★★<small>전</small><br/>
+            <span class="ice">빙</span>★★<small>후</small><br/>
+            <span class="water">수</span>★★<small>전</small><br/>
+            <span class="water">수</span>★★★<small>후</small><br/>
+            <span class="fire">불</span>★★<br/>
+            <span class="dragon">용</span>★
+          </span>
+        </li>
+
+        <li><p><small>흉조룡</small></p><p>오도가론 아종</p>
+          <span><img src="./images/mhwi-ebony_odogaron_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="water">수</span>★★★<br/>
+            <span class="fire">불</span>★★<br/>
+            <span class="thunder">뇌</span>★★<br/>
+            <span class="ice">빙</span>★★<br/>
+            <span class="dragon">용</span>★
+          </span>
+        </li>
+
+        <li><p><small>류참룡</small></p><p>디노발드 아종</p>
+          <span><img src="./images/mhwi-acidic_glavenus_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="fire">불</span>★★★<br/>
+            <span class="dragon">용</span>★★<small>전</small><br/>
+            <span class="dragon">용</span>★<small>후</small><br/>
+            <span class="water">뇌</span>★★<br/>
+            <span class="ice">수</span>★<br/>
+            <span class="thunder">빙</span>★
+          </span>
+        </li>
+
+        <li><p><small>모두를 멸하는</small></p><p>네르기간테</p>
+          <span><img src="./images/mhwi-ruiner_nergigante_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="dragon">용</span>★★★<br/>
+            <span class="thunder">뇌</span>★★<br/>
+            <span class="ice">빙</span>★<br/>
+            <span class="water">수</span>★<br/>
+            <span class="fire">불</span>★
+          </span>
+        </li>
+
+        <li><p><small>비독룡</small></p><p>토비카가치 아종</p>
+          <span><img src="./images/mhwi-viper_tobi-kadachi_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="thunder">뇌</span>★★★<br/>
+            <span class="ice">빙</span>★★<br/>
+            <span class="fire">불</span>★<br/>
+            <span class="dragon">용</span>★
+          </span>
+        </li>
+
+        <li><p><small>수요조</small></p><p>푸케푸케</p>
+          <span><img src="./images/mhwi-coral_pukei-pukei_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="ice">빙</span>★★★<br/>
+            <span class="thunder">뇌</span>★★<br/>
+            <span class="dragon">용</span>★<br/>
+            <span class="fire">불</span>★
+          </span>
+        </li>
+
+        <li><p><small>부면룡</small></p><p>파오우르무</p>
+          <span><img src="./images/mhwi-nightshade_paolumu_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="water">수</span>★★★<br/>
+            <span class="fire">불</span>★★<br/>
+            <span class="thunder">뇌</span>★<br/>
+            <span class="ice">빙</span>★
+          </span>
+        </li>
+
+        <li><p><small>명룡</small></p><p>네로미에르</p>
+          <span><img src="./images/mhwi-namielle_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="fire">불</span>★★★<br/>
+            <span class="dragon">용</span>★★<br/>
+            <span class="ice">빙</span>★
+          </span>
+        </li>
+
+        <li><p><small>흑랑조</small></p><p>얀가루루가</p>
+          <span><img src="./images/mhwi-yian_garuga_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="water">수</span>★★★<br/>
+            <span class="dragon">용</span>★★<br/>
+            <span class="ice">빙</span>★
+          </span>
+        </li>
+
+        <li><p><small>지제룡</small></p><p>이슈왈다</p>
+          <span><img src="./images/mhwi-shara_ishvalda_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="ice">빙</span>★★★<br/>
+            <span class="water">수</span>★★<br/>
+            <span class="dragon">용</span>★<br/>
+            <span class="fire">불</span>★
+          </span>
+        </li>
+
+        <li><p><small>미친</small></p><p>이블조</p>
+          <span><img src="./images/mhwi-savage_deviljho_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="thunder">뇌</span>★★★<br/>
+            <span class="dragon">용</span>★★★<br/>
+            <span class="fire">불</span>★★<br/>
+            <span class="water">수</span>★★<br/>
+            <span class="ice">빙</span>★
+          </span>
+        </li>
+
+        <li><p><small>죽음을 두른</small></p><p>발하지크</p>
+          <span><img src="./images/Blackveil_Vaal_Hazak.png" style="width:32px;"></span>
+          <span>
+            <span class="fire">불</span>★★<br/>
+            <span class="dragon">용</span>★★<br/>
+            <span class="ice">빙</span>★<br/>
+            <span class="thunder">뇌</span>★
+          </span>
+        </li>
+
+        <li><p><small>홍련의 솟구치는</small></p><p>바젤기우스</p>
+          <span><img src="./images/Seething_Bazelgeuse.png" style="width:32px;"></span>
+          <span>
+            <span class="ice">빙</span>★★★<br/>
+            <span class="thunder">뇌</span>★★<br/>
+            <span class="water">수</span>★<br/>
+            <span class="dragon">용</span>★
+          </span>
+        </li>
+
+        <li><p><small>뇌공룡</small></p><p>진오우</p>
+          <span><img src="./images/Zinogre.png" style="width:32px;"></span>
+          <span>
+            <span class="ice">빙</span>★★★<br/>
+            <span class="water">수</span>★★<br/>
+            <span class="fire">불</span>★<br/>
+            <span class="dragon">용</span>★
+          </span>
+        </li>
+
+        <li><p><small>상처입은</small></p><p>얀가루루가</p>
+          <span><img src="./images/MHW-Unknown_Monster_Icon.png" style="width:32px;"></span>
+          <span>
+            <span class="water">수</span>★★★<br/>
+            <span class="dragon">용</span>★★<br/>
+            <span class="ice">빙</span>★
+          </span>
+        </li>
+
+        <li><p><small>만악룡</small></p><p>안쟈나프</p>
+          <span><img src="./images/anjanath-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="water">수</span>★★★<br/>
+            <span class="ice">빙</span>★★<br/>
+            <span class="thunder">뇌</span>★★
+          </span>
+        </li>
+
+        <li><p><small>토사룡</small></p><p>볼보로스</p>
+          <span><img src="./images/barroth-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="thunder">뇌</span>★★★<br/>
+            <span class="dragon">용</span>★★<br/>
+            <span class="ice">빙</span>★★
+          </span>
+        </li>
+
+        <li><p><small>폭린룡</small></p><p>바젤기우스</p>
+          <span><img src="./images/bazelgeuse-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="water">수</span>★★★<br/>
+            <span class="ice">빙</span>★★<br/>
+            <span class="fire">불</span>★★
+          </span>
+        </li>
+
+        <li><p><small>마수</small></p><p>베히모스</p>
+          <span><img src="./images/mhw-behemoth_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="dragon">용</span>★★★
+          </span>
+        </li>
+
+        <li><p><small>공폭룡</small></p><p>이블조</p>
+          <span><img src="./images/Deviljho-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="dragon">용</span>★★★<br/>
+            <span class="thunder">뇌</span>★★★<br/>
+            <span class="fire">불</span>★★<br/>
+            <span class="water">수</span>★★<br/>
+          </span>
+        </li>
+
+        <li><p><small>각룡</small></p><p>디아블로스</p>
+          <span><img src="./images/mhw-diablos_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="ice">빙</span>★★★<br/>
+            <span class="dragon">용</span>★★<br/>
+            <span class="water">수</span>★★
+          </span>
+        </li>
+
+        <li><p><small>흑각룡</small></p><p>디아블로스 아종</p>
+          <span><img src="./images/black-diablos-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="ice">빙</span>★★★<br/>
+            <span class="water">수</span>★★
+          </span>
+        </li>
+
+        <li><p><small>암적룡</small></p><p>도도가마루</p>
+          <span><img src="./images/Dodogama-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="thunder">뇌</span>★★★<br/>
+            <span class="water">수</span>★★<br/>
+            <span class="ice">빙</span>★★
+          </span>
+        </li>
+
+        <li><p><small>비적룡</small></p><p>도스기르오스</p>
+          <span><img src="./images/great-girros-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="water">수</span>★★★<br/>
+            <span class="fire">불</span>★★<br/>
+            <span class="ice">빙</span>★★
+          </span>
+        </li>
+
+        <li><p><small>적룡</small></p><p>도스쟈그라스</p>
+          <span><img src="./images/Great-Jagras-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="fire">불</span>★★★<br/>
+            <span class="thunder">뇌</span>★★<br/>
+            <span class="ice">빙</span>★★
+          </span>
+        </li>
+
+        <li><p><small>이어룡</small></p><p>쥬라토도스</p>
+          <span><img src="./images/Jyuratodus-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="thunder">뇌</span>★★★<br/>
+            <span class="water">수</span>★★★
+          </span>
+        </li>
+
+        <li><p><small>환수</small></p><p>키린</p>
+          <span><img src="./images/Kirin-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="fire">불</span>★★★<br/>
+            <span class="water">수</span>★★<br/>
+            <span class="ice">빙</span>★★
+          </span>
+        </li>
+
+        <li><p><small>소조</small></p><p>쿠루루아크</p>
+          <span><img src="./images/Kulu-Ya-Ku-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="water">수</span>★★★<br/>
+            <span class="fire">불</span>★★<br/>
+            <span class="thunder">뇌</span>★★<br/>
+            <span class="ice">빙</span>★★<br/>
+            <span class="dragon">용</span>★★
+          </span>
+        </li>
+
+        <li><p><small>난휘룡</small></p><p>맘-타로트</p>
+          <span><img src="./images/Kulve-Taroth-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="thunder">뇌</span>★★★<br/>
+            <span class="ice">빙</span>★★★<br/>
+            <span class="water">수</span>★★<br/>
+            <span class="dragon">용</span>★★
+          </span>
+        </li>
+
+        <li><p><small>강룡</small></p><p>크샬다오라</p>
+          <span><img src="./images/Kushala-Daora-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="thunder">뇌</span>★★★<br/>
+            <span class="dragon">용</span>★★<br/>
+          </span>
+        </li>
+
+        <li><p><small>용암룡</small></p><p>볼가노스</p>
+          <span><img src="./images/Lavasioth-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="water">수</span>★★★<small>전</small><br/>
+            <span class="fire">불</span>★★★<small>후</small><br/>
+            <span class="ice">빙</span>★★
+          </span>
+        </li>
+
+        <li><p><small>풍표룡</small></p><p>레이기에나</p>
+          <span><img src="./images/Legiana-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="thunder">뇌</span>★★★<br/>
+            <span class="fire">불</span>★★
+          </span>
+        </li>
+
+        <li><p><small>염비룡</small></p><p>나나-테스카토리</p>
+          <span><img src="./images/mhw-lunastra_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="ice">빙</span>★★★<small>추</small><br/>
+            <span class="dragon">용</span>★★
+          </span>
+        </li>
+
+        <li><p><small>멸진룡</small></p><p>네르기간테</p>
+          <span><img src="./images/Nergigante-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="thunder">뇌</span>★★★<br/>
+            <span class="dragon">용</span>★★
+          </span>
+        </li>
+
+        <li><p><small>참조룡</small></p><p>오도가론</p>
+          <span><img src="./images/odogaronmhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="ice">빙</span>★★★<br/>
+            <span class="thunder">뇌</span>★★
+          </span>
+        </li>
+
+        <li><p><small>부공룡</small></p><p>파오우르무</p>
+          <span><img src="./images/Paolumu-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="fire">불</span>★★★<br/>
+            <span class="thunder">뇌</span>★★
+          </span>
+        </li>
+
+        <li><p><small>독요조</small></p><p>푸케푸케</p>
+          <span><img src="./images/Pukei-Pukei-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="thunder">뇌</span>★★★<br/>
+            <span class="fire">불</span>★★<br/>
+            <span class="ice">빙</span>★★
+          </span>
+        </li>
+
+        <li><p><small>골추룡</small></p><p>라도발킨</p>
+          <span><img src="./images/Radobaan-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="dragon">용</span>★★★<br/>
+            <span class="ice">빙</span>★★
+          </span>
+        </li>
+
+        <li><p><small>화룡</small></p><p>리오레우스</p>
+          <span><img src="./images/mhw-rathalos_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="dragon">용</span>★★★<br/>
+            <span class="thunder">뇌</span>★★
+          </span>
+        </li>
+
+        <li><p><small>창화룡</small></p><p>리오레우스 아종</p>
+          <span><img src="./images/Azure-Rathalos-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="dragon">용</span>★★★<br/>
+            <span class="ice">빙</span>★★
+          </span>
+        </li>
+
+        <li><p><small>자화룡</small></p><p>리오레이아</p>
+          <span><img src="./images/mhw-rathian_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="dragon">용</span>★★★<br/>
+            <span class="thunder">뇌</span>★★
+          </span>
+        </li>
+
+        <li><p><small>앵화룡</small></p><p>리오레이아 아종</p>
+          <span><img src="./images/Pink-Rathian-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="dragon">용</span>★★★<br/>
+            <span class="thunder">뇌</span>★★
+          </span>
+        </li>
+
+        <li><p><small>염왕룡</small></p><p>테오-테스카토르</p>
+          <span><img src="./images/Teostra-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="water">수</span>★★★<small>추</small><br/>
+            <span class="ice">빙</span>★★★
+          </span>
+        </li>
+
+        <li><p><small>비뢰룡</small></p><p>토비카가치</p>
+          <span><img src="./images/Tobi-Kadachi-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="water">수</span>★★★<br/>
+            <span class="fire">불</span>★★<br/>
+            <span class="ice">빙</span>★★
+          </span>
+        </li>
+
+        <li><p><small>현조</small></p><p>치치야크</p>
+          <span><img src="./images/Tzitzi-Ya-Ku-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="thunder">뇌</span>★★★<br/>
+            <span class="ice">빙</span>★★★<br/>
+            <span class="fire">불</span>★★<br/>
+            <span class="water">수</span>★★<br/>
+            <span class="dragon">용</span>★★
+          </span>
+        </li>
+
+        <li><p><small>폭추룡</small></p><p>우라간킨</p>
+          <span><img src="./images/Uragaan-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="water">수</span>★★★<br/>
+            <span class="icer">빙</span>★★<br/>
+            <span class="dragon">용</span>★★
+          </span>
+        </li>
+
+        <li><p><small>시투룡</small></p><p>발하자크</p>
+          <span><img src="./images/Vaal-Hazak-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="fire">불</span>★★★<small>추</small><br/>
+            <span class="dragon">용</span>★★★
+          </span>
+        </li>
+
+        <li><p><small>명등룡</small></p><p>제노-지바</p>
+          <span><img src="./images/Xenojiiva-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="thunder">뇌</span>??????<br/>
+            <span class="ice">빙</span>??????<br/>
+            <span class="fire">불</span>??????<br/>
+            <span class="water">수</span>??????<br/>
+            <span class="dragon">용</span>??????
+          </span>
+        </li>
+
+        <li><p><small>용산룡</small></p><p>조라-마그다라오스</p>
+          <span><img src="./images/Zorah-Magdaros-mhw-Icon-small.png" style="width:32px;"></span>
+          <span>
+            <span class="water">수</span>★★★<br/>
+            <span class="dragon">용</span>★★★
+          </span>
+        </li>
+
+        <li><p><small>이벤트</small></p><p>레셴</p>
+          <span><img src="./images/ancient_leshen_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="fire">불</span>★★★<br/>
+            <span class="thunder">뇌</span>★★<br/>
+            <span class="dragon">용</span>★★
+          </span>
+        </li>
+
+        <li><p><small>이벤트</small></p><p>고대 레셴</p>
+          <span><img src="./images/mhw-leshen_icon.png" style="width:32px;"></span>
+          <span>
+            <span class="fire">불</span>★★★<br/>
+            <span class="thunder">뇌</span>★★<br/>
+            <span class="dragon">용</span>★★
+          </span>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+</div><!-- #body_container_  -->
+
+<!-- #footer  --><footer id="footer">
+  <!-- #footer_inner --><div class="footer_inner wrap">
+  </div><!-- #footer_inner_ -->
+</footer><!-- #footer  -->
+
+</div><!-- #global_container_ -->
+
+</body>
+</html>
